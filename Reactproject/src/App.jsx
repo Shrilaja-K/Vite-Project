@@ -1,110 +1,61 @@
-
-// import React, { useEffect } from 'react'
-// import { useState } from 'react';
-
+import React, {Component, Fragment} from "react";
+import './App.css';
+import  Greet from "./Greet.jsx";
+import  Message from "./Message.jsx";
+import  Counter from "./Counter.jsx";
+import ParentComponent from "./ParentComponent.jsx";
+import Form from "./Form.jsx";
+import LifecycleA from "./LifecycleA.jsx";
+import Fragmentdemo from "./Fragmentdemo.jsx";
+import Childstatelift from "./Childstatelift.jsx";
+import StatehookCounter from "./StatehookCounter.jsx";
+import Statehookcounter2 from "./Statehookcounter2.jsx";
+import Statehookcounter3 from "./Statehookcounter3.jsx";
+import Statehookcounter4 from "./Statehookcounter4.jsx";
+import Effecthookcounter1 from "./Effecthookcounter1.jsx";
+import Effecthookcounter2 from "./Effecthookcounter2.jsx";
+import Mousecontainer from "./Mousecontainer.jsx";
+import Intervalhookcounter from "./Intervalhookcounter.jsx";
+import DataFetching from "./DataFetching.jsx";
 
 // const App = () => {
-  
-//    const [num1, setnum1] = useState(100);
-//    const [num2, setnum2] = useState(1000);
 
-//    useEffect(()=>{
-//       setnum1(200);
-//       console.log("from useEffect");
-//       return ()=>{
-//         console.log("memory cleaned");
-//       }
+//    function parent(greet){
+//     alert(greet);
+//    }
 
-//    },[num1,num2]); 
-  
-//   //  console.log("num1",num1);
 //   return (
-//     <div>
-//       <h1>{num1}</h1>
-//     <button onClick={() => setnum1((cur)=>cur+1)}>Add</button>
-//     <h1>{num2}</h1>
-//     <button onClick={() => setnum2((cur)=>cur+1)}>Add</button>
-//     </div>
-//   )
-// }
-
-// export default App
-
-
-import React, { useState } from "react";
- const App= () =>{
-  const [num,setnum]=useState(1);
-  let x=1;
- 
-const handleadd = () =>{
-  setnum((curvalue)=>{
-    return curvalue+1;
-  });
-};
-console.log(num);
- return (
-  <div>
-    <h1>{num}</h1>
-    <button onClick={handleadd}>Add</button>
-  </div>
- );
-};
-export default App
-
-
-// import FunctionalComponent from './FunctionalComponent';
-// import ClassComponent from './ClassComponent';
-// import UnMounting from './UnMounting';
-// import './App.css'
-
-// function App() {
-//   return (
-//     <div>
-//       <h1>This is App</h1>
-//       {/* <FunctionalComponent />
-//       <ClassComponent /> */}
-//       <UnMounting />
-//     </div>
+//     <Fragment>
+//       <Childstatelift func={parent} />
+//     </Fragment>
 //   );
 // }
 
+class App extends Component {
 
-// import React ,{useState} from 'react'
-// import { useEffect } from 'react';
-// import { useRef } from 'react';
-// import Functionclick from './Functionclick';
-// import Classclick from './Classclick';
-
-// const App = () => {
-//   // const [input, setInput] = useState("");
-//   // const inputRef=useRef();
-//   // console.log("Rendering")
-//   // useEffect(()=>{
-//   //   inputRef.current=input;
-//   // },[input]);
-//   // const display=()=>{
-//   //   console.log(inputRef.current)
-//   // };
-
-//   return (
-//     <div>
-//       {/* <h4>Input</h4>
-//       <input
-//       type="text"
-//       value={input}
-//       onChange={(event)=>setInput(event.target.value)}
-//       ></input>
-//       <p>MY name is {input}</p>
-//       <p>My name is {inputRef.current}</p>
-//       <button onClick={display}>Show Input</button> */}
-//       <Functionclick/>
-//       <Classclick/>
-//     </div>
-    
-//   )
-// }
-// export default App
-
-
-
-
+  render() {
+    return (
+      <div className="App">
+        {/* <Greet name="Everyone" />
+        <p>Using children props</p> */}
+        {/* <Message /> */}
+        {/* <Counter /> */}
+        {/* <ParentComponent /> */}
+        {/* <Form /> */}
+        {/* <LifecycleA /> */}
+        {/* <Fragmentdemo /> */}
+        {/* <StatehookCounter /> */}
+        {/* <Statehookcounter2 /> */}
+        {/* <Statehookcounter3 /> */}
+        {/* <Statehookcounter4 /> */}
+        {/* <Effecthookcounter1 /> */}
+        {/* <Effecthookcounter2 /> */}
+        {/* <Mousecontainer /> */}
+        {/* <Intervalhookcounter /> */}
+        <DataFetching />
+        
+      </div>
+    );
+  }
+}
+export default App;

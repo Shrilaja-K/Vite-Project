@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Box} from '@mui/material';
+import {Box,Grid} from '@mui/material';
 
 export default class Muilayout extends Component {
   render() {
@@ -25,8 +25,49 @@ export default class Muilayout extends Component {
       bgcolor='success.light'
       p={2}
         >
-        
       </Box>
+      <Grid container>
+        <Grid item> 
+            <Box 
+            bgcolor='warning.light'
+            p={2}
+            >
+                Item 1
+            </Box>
+        </Grid>
+        <Grid item>
+        <Box 
+            bgcolor='warning.light'
+            p={2}
+            >
+                Item 2
+            </Box>                                          
+        </Grid>
+        <Grid item>
+        <Box 
+            bgcolor='warning.light'
+            p={2}
+            >
+                Item 3
+            </Box>
+        </Grid>
+        <Grid item>
+        <Box 
+            bgcolor='warning.light'
+            p={2}
+            >
+                Item 4
+            </Box>
+        </Grid>
+        <Grid item>
+        <Box 
+            bgcolor='warning.light'
+            p={2}
+            >
+                Item 5
+            </Box>
+        </Grid>
+      </Grid>
       </>
     )
   }

@@ -17,6 +17,7 @@ import Effecthookcounter2 from "./Effecthookcounter2.jsx";
 import Mousecontainer from "./Mousecontainer.jsx";
 import Intervalhookcounter from "./Intervalhookcounter.jsx";
 import DataFetching from "./DataFetching.jsx";
+import Refhooktimer from "./Refhooktimer.jsx";
 
 // const App = () => {
 
@@ -52,7 +53,8 @@ class App extends Component {
         {/* <Effecthookcounter2 /> */}
         {/* <Mousecontainer /> */}
         {/* <Intervalhookcounter /> */}
-        <DataFetching />
+        {/* <DataFetching /> */}
+        <Refhooktimer />
         
       </div>
     );

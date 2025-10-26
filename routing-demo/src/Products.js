@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Link,Outlet } from 'react-router-dom'
 
 export default class Products extends Component {
   render() {
@@ -9,9 +9,10 @@ export default class Products extends Component {
         <input type='search' placeholder='Search Products'/>
       </div>
       <nav>
-      <Link to='Featured'>Featured</Link> 
-       <Link to='New'>New</Link>
+      <Link to='featured'>Featured</Link> 
+       <Link to='new'>New</Link>
        </nav>
+       <Outlet />
       </>
     )
   }

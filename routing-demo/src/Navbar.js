@@ -17,7 +17,7 @@ export default class Navbar extends Component {
     </NavLink> 
     <NavLink style={this.navlinkstyle} to="/about">About   
     </NavLink> 
-    <NavLink style={this.navlinkstyle} to="/Products">Products  
+    <NavLink style={this.navlinkstyle} to="/products">Products  
     </NavLink>
     </nav>
     )

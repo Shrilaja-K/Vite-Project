@@ -12,10 +12,10 @@ code {
     monospace;
 }
 .primary-nav {
-  background-color: #282c34;
+  background-color: #a2aab9;
   padding: 1rem;
 }
 nav a {
-  color: white;
+  color: rgb(19, 17, 17);
   margin: 0 1rem;
 }

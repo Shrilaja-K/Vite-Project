@@ -23,16 +23,16 @@ import Withstyle from './Components/Withstyle';
 import Countertypescript from './Components/Countertypescript';
 
 // Creating a custom theme
-// const theme = createTheme({
-//   status: {
-//     danger: '#bb3838ff',
-//   },
-//   palette: {
-//     secondary: {
-//       main: colors.orange[500],
-//     },
-//   },
-// });
+const theme = createTheme({
+  status: {
+    danger: '#bb3838ff',
+  },
+  palette: {
+    secondary: {
+      main: colors.orange[500],
+    },
+  },
+});
 
 function App() {
   return (

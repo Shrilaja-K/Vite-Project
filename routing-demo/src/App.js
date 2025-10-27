@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Route,Routes } from 'react-router-dom';
 import Navbar from './Navbar';
+import {AuthProvider} from './AuthContext'
 import Ordersummary from './Ordersummary';
 import Home from './Home';
 import About from './About';
@@ -13,11 +14,17 @@ import Newproduct from './Newproduct';
 import Users from './Users';
 import Admin from './Admin';
 import Usrdetails from './Usrdetails';
+import Profile from './Profile';
+import Login from './Login';
+import RequireAuth from './RequireAuth';
+
 const Lazyabout=React.lazy(()=>import('./About'))
+
+
 
 function App() {
   return (
-    <>
+    <AuthProvider>
     <Navbar />
     <Routes>
       <Route path='/' element={<Home />} />
@@ -35,10 +42,12 @@ function App() {
         <Route path=':userId' element={<Usrdetails />} />
         <Route path='admin' element={<Admin />} />
       </Route>
+      <Route path='profile' element={<RequireAuth><Profile /></RequireAuth>} />
+        <Route path='/login' element={<Login />} />
       <Route path='*' element={<Nomatch/>} />
       
     </Routes>
-    </>
+    </AuthProvider>
   );
 }
 

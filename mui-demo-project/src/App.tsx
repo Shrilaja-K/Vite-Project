@@ -20,51 +20,56 @@ import Muiresponsive from './Components/Muiresponsive';
 import { createTheme, colors, ThemeProvider } from '@mui/material';
 import Propstyle from './Components/Propstyle';
 import Withstyle from './Components/Withstyle';
+import Countertypescript from './Components/Countertypescript';
 
 // Creating a custom theme
-const theme = createTheme({
-  status: {
-    danger: '#bb3838ff',
-  },
-  palette: {
-    secondary: {
-      main: colors.orange[500],
-    },
-  },
-});
+// const theme = createTheme({
+//   status: {
+//     danger: '#bb3838ff',
+//   },
+//   palette: {
+//     secondary: {
+//       main: colors.orange[500],
+//     },
+//   },
+// });
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <div className="App">
-        {/* <Muitypography /> */}
-        {/* <Muibuttons /> */}
-        {/* <Muicheckbox /> */}
-        {/* <Muiradiobutton /> */}
-        {/* <Muiselect /> */}
-        {/* <Muisliders /> */}
-        {/* <Muitextfields /> */}
-        {/* <Muilayout /> */}
-        {/* <Muinavbar /> */}
-        {/* <UIgrid /> */}
-        {/* <Muitable /> */}
-        {/* <UItable /> */}
-        {/* <Muilink /> */}
-        {/* <UIlink /> */}
-        {/* <Muidialog />*/}
-        {/* <MuiSkeleton /> */}
-        {/* <Muipagination /> */}
-        {/* <Muiresponsive /> */}
-        <Withstyle />
+  //   <ThemeProvider theme={theme}>
+  //     <div className="App">
+  //       {/* <Muitypography /> */}
+  //       {/* <Muibuttons /> */}
+  //       {/* <Muicheckbox /> */}
+  //       {/* <Muiradiobutton /> */}
+  //       {/* <Muiselect /> */}
+  //       {/* <Muisliders /> */}
+  //       {/* <Muitextfields /> */}
+  //       {/* <Muilayout /> */}
+  //       {/* <Muinavbar /> */}
+  //       {/* <UIgrid /> */}
+  //       {/* <Muitable /> */}
+  //       {/* <UItable /> */}
+  //       {/* <Muilink /> */}
+  //       {/* <UIlink /> */}
+  //       {/* <Muidialog />*/}
+  //       {/* <MuiSkeleton /> */}
+  //       {/* <Muipagination /> */}
+  //       {/* <Muiresponsive /> */}
+  //       <Withstyle />
 
-        {/* <div style={{ display: 'flex', gap: '20px', padding: '20px' }}>
-          <Propstyle />
-          <Propstyle bgcolor="secondary.main" size={120} />
-          <Propstyle bgcolor="error.main" size={150} />
-        </div> */}
-      </div>
-    </ThemeProvider>
+  //       {/* <div style={{ display: 'flex', gap: '20px', padding: '20px' }}>
+  //         <Propstyle />
+  //         <Propstyle bgcolor="secondary.main" size={120} />
+  //         <Propstyle bgcolor="error.main" size={150} />
+  //       </div> */}
+  //     </div>
+  //   </ThemeProvider>
+  // );
+  <div>
+    <Countertypescript />
+  </div>
   );
-}
+} 
 
 export default App;
